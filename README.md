@@ -43,7 +43,6 @@ $ koi file1.txt file2.txt
 - Pass a glob character to read multiple files
 ```
 $ koi *.sh  # prints all files ending with .sh to STDOUT
-
 ```
 
 ## Uninstallation
