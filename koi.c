@@ -2,6 +2,7 @@
 #include <stdio.h>
 #define GN "\033[38;5;118m" // Green
 #define GC "\033[38;5;248m" // Grey
+#define RD "\033[38;5;196m" // Red
 #define RT "\033[0m"        // Reset
 
 /* 
@@ -19,7 +20,7 @@ int main(int argc, char *argv[]) {
     for (int i = 1; i < argc; i++) {
         FILE *fp = fopen(argv[i], "r");
         if (!fp) {
-            fprintf (stderr, "%s: %s: %s\n", argv[0],argv[i], strerror(errno));
+            fprintf (stderr, "> %s%s%s: %s\n", RD, argv[i], RT, strerror(errno));
             continue;
         }
 
