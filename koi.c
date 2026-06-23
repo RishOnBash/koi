@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
         FILE *fp = fopen(argv[i], "r");
         if (!fp) {
             fprintf (stderr, "%s: %s: %s\n", argv[0],argv[i], strerror(errno));
-            return 1;
+            continue;
         }
 
         char buffer [1024];
