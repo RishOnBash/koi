@@ -52,7 +52,7 @@ make uninstall
 ```
 
 ## TODO
-- [ ] Read from STDIN
+- [x] Read from STDIN
 - [ ] Automatic pager
 
 ## License
